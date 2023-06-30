@@ -5,7 +5,9 @@
     <classes>
       <class name="com.tutorialsninja.qa.testcases.SearchTest">
         <methods>
+          <include name="searchProductIsValid"/>
           <include name="setupBrowser"/>
+          <include name="emptySearchField"/>
           <include name="searchProductIsInValid"/>
           <include name="tearOfBrowser"/>
         </methods>

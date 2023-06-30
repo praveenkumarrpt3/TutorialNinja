@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Tutorial Ninja Test Suite]">
-  <listeners>
-    <listener class-name="com.tutorialninja.qa.listeners.Mylisteners"/>
-  </listeners>
-  <test thread-count="5" name="TN Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.tutorialsninja.qa.testcases.SearchTest">
         <methods>
+          <include name="searchProductIsValid"/>
           <include name="setupBrowser"/>
+          <include name="emptySearchField"/>
           <include name="searchProductIsInValid"/>
           <include name="tearOfBrowser"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.SearchTest -->
     </classes>
-  </test> <!-- TN Test(failed) -->
-</suite> <!-- Failed suite [Tutorial Ninja Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
